@@ -1,0 +1,9 @@
+ARCHS = ['aarch64-rtems6']
+ARCH_BSPS = ['aarch64-rtems6-raspberrypi4b']
+BINDIR = '/usr/local/bin'
+LIBDIR = '/usr/local/lib64'
+LONG_COMMANDS = 'no'
+PREFIX = '/usr/local'
+RTEMS_ARCH_BSP_LIST = ['aarch64-rtems6-raspberrypi4b']
+RTEMS_TOOLS = ['/home/sjaemin/development/rtems/6/bin']
+SHOW_COMMANDS = 'no'

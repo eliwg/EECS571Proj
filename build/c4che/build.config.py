@@ -1,0 +1,2 @@
+version = 0x2010200
+tools = [{'tool': 'ar', 'tooldir': [], 'funs': None}, {'tool': 'c', 'tooldir': [], 'funs': None}, {'tool': 'gcc', 'tooldir': [], 'funs': None}, {'tool': 'ar', 'tooldir': [], 'funs': None}, {'tool': 'cxx', 'tooldir': [], 'funs': None}, {'tool': 'g++', 'tooldir': [], 'funs': None}, {'tool': 'ar', 'tooldir': [], 'funs': None}, {'tool': 'asm', 'tooldir': [], 'funs': None}, {'tool': 'gas', 'tooldir': [], 'funs': None}, {'tool': 'gccdeps', 'tooldir': ['/home/sjaemin/development/rtems/app/pi_cluster/rtems_waf'], 'funs': None}]
