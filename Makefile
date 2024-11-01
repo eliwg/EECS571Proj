@@ -12,7 +12,8 @@ AARCH64_GCC_PATH=~/development/rtems/6/aarch64-rtems6/bin
 SD_CARD_PATH=/media/sjaemin/bootfs
 
 # For UART communication
-UART_PORT=/dev/ttyUSB0
+UART_PORT_0=/dev/ttyUSB0
+UART_PORT_1=/dev/ttyUSB1
 # Use 8-N-1 config with baud rate (b) of 115200
 # 8-N-1 means 8 data bits (d), no parity (p), 1 stop bit
 # -l: do not attempt to lock serial port
@@ -33,8 +34,11 @@ flash:
 	@sudo eject $(SD_CARD_PATH)
 	@echo "SD card ejected."
 
-uart:
-	sudo picocom $(UART_PORT) $(PICOCOM_FLAGS)
+uart0:
+	sudo picocom $(UART_PORT_0) $(PICOCOM_FLAGS)
+
+uart1:
+	sudo picocom $(UART_PORT_1) $(PICOCOM_FLAGS)
 
 tasks:
 	@python3 ./gen_tasks.py
