@@ -18,8 +18,8 @@ void uart_read_task(rtems_task_argument argument) {
     int fd;
 
     // fd = open(UART_DEVICE, O_RDONLY);
-    // printf("fd = %d\n", fd);
-    // fflush(stdout);
+    printf("Hello\n");
+    fflush(stdout);
 
     while (1) {
         // bytes_read = read(UART_DEVICE, buf, sizeof(buf) - 1);
